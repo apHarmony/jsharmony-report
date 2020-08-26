@@ -1,0 +1,21 @@
+{
+  "name": "jsharmony-report",
+  "version": "1.0.0",
+  "description": "jsHarmony Report Extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jsHarmony",
+    "Report",
+    "Reports",
+    "Reporting",
+    "Generator",
+    "Extension"
+  ],
+  "author": "apHarmony <contact@apharmony.com> (http://www.apharmony.com/)",
+  "license": "LGPL-3.0",
+  "dependencies": {
+  }
+}
