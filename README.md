@@ -9,3 +9,9 @@ Report generator for jsHarmony
 ```
 npm install jsharmony-report
 ```
+
+Then, in the app.config.js or app.config.local.js, set:
+
+```
+jsh.Extensions.report = require('jsharmony-report');
+```

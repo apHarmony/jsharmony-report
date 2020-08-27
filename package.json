@@ -1,6 +1,6 @@
 {
   "name": "jsharmony-report",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jsHarmony Report Extension",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,7 @@
   "author": "apHarmony <contact@apharmony.com> (http://www.apharmony.com/)",
   "license": "LGPL-3.0",
   "dependencies": {
+    "pdf-merge": "^1.2.0",
+    "puppeteer": "^2.1.1"
   }
 }
