@@ -22,6 +22,12 @@ var puppeteer = null;
 
 exports = module.exports = {};
 
+exports.type = 'jsharmony-report';
+
+exports.init = function(callback){
+  return callback();
+}
+
 exports.pdfMerge = function(){
   if(!pdfMerge) pdfMerge = require('pdf-merge');
   return pdfMerge;

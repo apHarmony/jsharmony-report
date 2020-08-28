@@ -1,6 +1,6 @@
 {
   "name": "jsharmony-report",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jsHarmony Report Extension",
   "main": "index.js",
   "scripts": {
