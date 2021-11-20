@@ -17,6 +17,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with this package.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+var excelJS = null;
 var pdfMerge = null;
 var puppeteer = null;
 
@@ -28,6 +29,11 @@ exports.init = function(callback){
   return callback();
 }
 
+exports.excelJS = function(){
+  if(!excelJS) excelJS = require('exceljs');
+  return excelJS;
+}
+
 exports.pdfMerge = function(){
   if(!pdfMerge) pdfMerge = require('pdf-merge');
   return pdfMerge;
@@ -36,6 +42,10 @@ exports.pdfMerge = function(){
 exports.puppeteer = function(){
   if(!puppeteer) puppeteer = require('puppeteer');
   return puppeteer;
+}
+
+exports.getExcelJS = function(cb){
+  return cb(null, exports.excelJS());
 }
 
 exports.getPdfMerge = function(cb){
