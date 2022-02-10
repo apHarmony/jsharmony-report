@@ -27,31 +27,31 @@ exports.type = 'jsharmony-report';
 
 exports.init = function(callback){
   return callback();
-}
+};
 
 exports.excelJS = function(){
   if(!excelJS) excelJS = require('exceljs');
   return excelJS;
-}
+};
 
 exports.pdfMerge = function(){
   if(!pdfMerge) pdfMerge = require('pdf-merge');
   return pdfMerge;
-}
+};
 
 exports.puppeteer = function(){
   if(!puppeteer) puppeteer = require('puppeteer');
   return puppeteer;
-}
+};
 
 exports.getExcelJS = function(cb){
   return cb(null, exports.excelJS());
-}
+};
 
 exports.getPdfMerge = function(cb){
   return cb(null, exports.pdfMerge());
-}
+};
 
 exports.getPuppeteer = function(cb){
   return cb(null, exports.puppeteer());
-}
+};
